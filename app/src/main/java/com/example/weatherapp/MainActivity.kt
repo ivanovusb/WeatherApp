@@ -3,7 +3,7 @@ package com.example.weatherapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.weatherapp.databinding.ActivityMainBinding
-import com.example.weatherapp.view.weatherlist.WeatherFragment
+import com.example.weatherapp.view.weatherlist.WeatherDetailsFragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
 
         } else {
             supportFragmentManager.beginTransaction()
-                .replace(R.id.fragment_container, WeatherFragment.newInstance())
+                .replace(R.id.fragment_container, WeatherDetailsFragment.newInstance())
                 .commit()
         }
 
